@@ -1,0 +1,73 @@
+**Using baseline_classifier_22**
+Training Fold 1...
+Fold 1 | Micro: 0.514 | Macro: 0.484
+
+Training Fold 2...
+Fold 2 | Micro: 0.505 | Macro: 0.477
+
+Training Fold 3...
+Fold 3 | Micro: 0.507 | Macro: 0.479
+
+Training Fold 4...
+Fold 4 | Micro: 0.522 | Macro: 0.501
+
+Training Fold 5...
+Fold 5 | Micro: 0.530 | Macro: 0.511
+
+
+===== FINAL RESULTS =====
+
+Micro F1 : 0.516 ± 0.009
+Macro F1 : 0.490 ± 0.013
+
+Training Final Model...
+
+===== TRAINING SET REPORT (REFERENCE ONLY) =====
+
+              precision    recall  f1-score   support
+
+       T1005       0.82      0.98      0.89       150
+       T1016       0.83      0.96      0.89       207
+   T1027.013       0.84      0.98      0.90       168
+       T1033       0.83      0.99      0.90       178
+       T1057       0.85      0.92      0.88       243
+   T1059.003       0.90      0.91      0.91       275
+   T1070.004       0.87      0.96      0.91       233
+   T1071.001       0.91      0.93      0.92       313
+       T1082       0.94      0.94      0.94       324
+       T1083       0.91      0.91      0.91       282
+       T1105       0.93      0.92      0.93       364
+       T1106       0.82      0.98      0.89       180
+       T1140       0.86      0.97      0.91       268
+   T1547.001       0.86      0.97      0.91       186
+   T1573.001       0.79      0.98      0.88       156
+
+   micro avg       0.87      0.95      0.91      3527
+   macro avg       0.86      0.95      0.91      3527
+weighted avg       0.87      0.95      0.91      3527
+ samples avg       0.88      0.94      0.89      3527
+
+
+Total samples: 659
+Total labels : 15
+----------------------------------------------------
+
+
+
+**CSV Gist**
+
+malware_id,description,rule_full_text,llm_text,techniques
+malware--ede4ff61-c855-55a9-9cf8-caff9c075423,[HermeticWizard](https://attack.mitre.org/software/S0698) is a worm that has been used to spread [HermeticWiper](https://attack.mitre.org/software/S0697) in attacks against organizations in Ukraine since at least 2022.(Citation: ESET Hermetic Wizard March 2022),"HermeticWizard is a malware family that primarily targets unknown systems. Description: [HermeticWizard](https://attack.mitre.org/software/S0698) is a worm that has been used to spread [HermeticWiper](https://attack.mitre.org/software/S0697) in attacks against organizations in Ukraine since at least 2022.(Citation: ESET Hermetic Wizard March 2022). It is associated with the following ATT&CK techniques: T1018|T1021.002|T1027.013|T1036.005|T1046|T1047|T1059.003|T1070.001|T1106|T1110.001|T1218.010|T1218.011|T1553.002|T1559.001|T1569.002|T1570. The malware has documented links to 0 campaigns, 0 intrusion sets, and 0 related tools. It participates in approximately 16 known relationships within threat intelligence datasets. Known aliases include: unknown. External references: mitre-attack:S0698. Reported confidence level: unknown.","Malware Profile:
+
+Name: HermeticWizard (malware--ede4ff61-c855-55a9-9cf8-caff9c075423)
+Description: HermeticWizard is a worm known for its involvement in spreading the destructive malware HermeticWiper since at least 2022. This information is based on research by ESET as stated in their report from March 2022 (Citation: ESET Hermetic Wizard March 2022).
+Aliases: nan
+Platforms: Not specified
+Is Family: True (indicating it's a member of a larger family of malware)
+Number of Campaigns: 0 (as per the provided data)
+Number of Intrusion Sets: 0 (as per the provided data)
+Number of Tools: 0 (as per the provided data)
+Number of Relationships: 16
+External References: mitre-attack:S0698",T1027.013|T1059.003|T1106
+-----------------------------------------------------
+
